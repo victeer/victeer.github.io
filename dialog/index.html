@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<script src="static/js/jquery-2.1.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="static/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+<script src="static/js/chat.js" type="text/javascript" charset="utf-8"></script>
+<script src="static/js/ajaxfileupload.js" type="text/javascript" charset="utf-8"></script>
+
+
+<link rel="stylesheet" href="static/css/bootstrap.css" type="text/css" charset="utf-8"/>
+<link rel="stylesheet" href="static/css/chat.css" type="text/css" charset="utf-8"/>
+
+
+<!-- jquery-fileupload and dependencies. -->
+<script src="static/js/fileupload/jquery.ui.widget.js"></script>
+<script src="static/js/fileupload/load-image.all.min.js"></script>
+<script src="static/js/fileupload/canvas-to-blob.min.js"></script>
+<script src="static/js/fileupload/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="static/js/fileupload/jquery.fileupload.js"></script>
+<!-- The File Upload processing plugin -->
+<script src="static/js/fileupload/jquery.fileupload-process.js"></script>
+<!-- The File Upload image preview & resize plugin -->
+<script src="static/js/fileupload/jquery.fileupload-image.js"></script>
+<!-- The File Upload audio preview plugin -->
+<script src="static/js/fileupload/jquery.fileupload-audio.js"></script>
+<!-- The File Upload video preview plugin -->
+<script src="static/js/fileupload/jquery.fileupload-video.js"></script>
+<!-- The File Upload validation plugin -->
+<script src="static/js/fileupload/jquery.fileupload-validate.js"></script>
+
+<title>互动式图片搜索系统</title>
+<style type="text/css">
+.file-box{ position:relative;width:340px}
+.txt{ height:22px; border:1px solid #cdcdcd; width:180px;}
+.btn-imag{ background-color:#FFF; border:1px solid #CDCDCD;height:24px; width:70px;}
+.file{ position:absolute; top:0; right:80px; height:24px; filter:alpha(opacity:0);opacity: 0;width:260px }
+
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<h1 class="text-center">
+			互动式图片搜索系统
+		</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-9 col-md-offset-1">
+			<p class="text-info">
+				Hello World，I am the first one.
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-5 col-md-offset-1">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<span class="glyphicon glyphicon-comment"></span>
+				</div>
+				<div class="panel-body">
+					<ul class="chat">
+						<li class="left clearfix"><span class="chat-img pull-left">
+							<img src="static/img/robot.gif" alt="Robot" class="img-circle" />
+						</span>
+						<div class="chat-body clearfix">
+							<p>
+							<img id="form-imgPre" src="uploads/fc838f8ad579489e1f723da8ee06219OvdstZHj.jpg"  /> 
+							
+							</p>
+						</div>
+						</li>
+						<li class="right clearfix"><span class="chat-img pull-right">
+							<img src="static/img/user.gif" alt="User" class="img-circle" />
+						</span>
+						<div class="chat-body clearfix">
+							<p class="pull-right">
+							<img id="form-imgPre" src="uploads/02053492.jpg"  /> 
+							</p>
+						</div>
+						</li>
+						<li class="left clearfix"><span class="chat-img pull-left">
+							<img src="static/img/robot.gif" alt="Robot" class="img-circle" />
+						</span>
+						<div class="chat-body clearfix">
+							<p>
+							我想要一条长裙。
+							
+							</p>
+						</div>
+						</li>
+						<li class="right clearfix"><span class="chat-img pull-right">
+							<img src="static/img/user.gif" alt="User" class="img-circle" />
+						</span>
+						<div class="chat-body clearfix">
+							<p class="pull-right">
+							<img id="form-imgPre" src="uploads/03045006.jpg"  /> 
+							</p>
+						</div>
+						</li>
+						<li class="left clearfix"><span class="chat-img pull-left">
+							<img src="static/img/robot.gif" alt="Robot" class="img-circle" />
+						</span>
+						<div class="chat-body clearfix">
+							<p>
+							我想要一条短裙。
+							</p>
+						</div>
+						</li>
+						<li class="right clearfix"><span class="chat-img pull-right">
+							<img src="static/img/user.gif" alt="User" class="img-circle" />
+						</span>
+						<div class="chat-body clearfix">
+							<p class="pull-right">
+							<img id="form-imgPre" src="uploads/03053322.jpg"  /> 
+							</p>
+						</div>
+						</li>
+						<li class="left clearfix"><span class="chat-img pull-left">
+							<img src="static/img/robot.gif" alt="Robot" class="img-circle" />
+						</span>
+						<div class="chat-body clearfix">
+							<p>
+							我想要一条蓬蓬裙。
+							</p>
+						</div>
+						</li>
+						<li class="right clearfix"><span class="chat-img pull-right">
+							<img src="static/img/user.gif" alt="User" class="img-circle" />
+						</span>
+						<div class="chat-body clearfix">
+							<p class="pull-right">
+							<img id="form-imgPre" src="uploads/03052364.jpg"  /> 
+							</p>
+						</div>
+						</li>
+						<li class="left clearfix"><span class="chat-img pull-left">
+							<img src="static/img/robot.gif" alt="Robot" class="img-circle" />
+						</span>
+						<div class="chat-body clearfix">
+							<p>
+							我想要一条A字裙。
+							</p>
+						</div>
+						</li>
+						<li class="right clearfix"><span class="chat-img pull-right">
+							<img src="static/img/user.gif" alt="User" class="img-circle" />
+						</span>
+						<div class="chat-body clearfix">
+							<p class="pull-right">
+							<img id="form-imgPre" src="uploads/02005529.jpg"  /> 
+							</p>
+						</div>
+						</li>
+					</ul>
+				</div>
+				<div class="panel-footer">
+					<div class="input-group" >
+						<input id="btn-input" type="text" class="form-control input-sm" placeholder="来跟我对话吧。" /><!--需要发送的信息-->
+						<span class="input-group-btn">
+							<button class="btn btn-warning btn-sm" id="btn-chat">
+								发送</button>
+						</span>
+					</div>
+					<div class="file-box" style="display:none;">
+						<!--form action="/upload" enctype="multipart/form-data" id="imageform" method="POST"-->
+						<input type='text' name='textfield' id='textfield' class='txt' /> 
+						<input type='button' class='btn-img' value='浏览...' />
+						<input type="file" name="photo" class="file" id="img_file" size="28" />
+						<img id="form-imgPre" src="" style="display:none;"  /> 
+						<input type="submit" name="submit" class="btn-img" id ="btn-upload" value="上传" />
+						<!--/form-->
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
