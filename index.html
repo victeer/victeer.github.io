@@ -258,6 +258,650 @@
             
               
                 
+                <a class="post-title-link" href="/2016/10/09/startup/markdown-using/" itemprop="url">
+                  markdown 语法使用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-09T22:45:29+08:00" content="2016-10-09">
+              2016-10-09
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/09/startup/markdown-using/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/09/startup/markdown-using/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/09/startup/markdown-using/" class="leancloud_visitors" data-flag-title="markdown 语法使用">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ul>
+<li><p>Hexo 支持更强大的 quote 块：可以添加引用作者、来源、链接等；在有这些需求的时候可以引用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% blockquote [author[, <span class="built_in">source</span>]] [link] [source_link_title] %&#125;</div><div class="line">content</div><div class="line">&#123;% endblockquote %&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Hexo 支持更强大的 code 块：支持为 code 块添加标题和链接；当我们需要引用某个链接内的代码时可以使用，一般情况下使用 md 的代码块语法即可</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</div><div class="line">code snippet</div><div class="line">&#123;% endcodeblock %&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Hexo 支持更使用特定的语法，插入指定大小的图片，如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">// 语法</div><div class="line">&#123;% img [class names] /path/to/image [width] [height] [title text [alt text]] %&#125;</div><div class="line">// 实例</div><div class="line">&#123;% img full-image /hexo-experiences/PL01.jpg 180 180 hello %&#125;</div><div class="line">// 生成的代码</div><div class="line">&lt;img src=<span class="string">"/blog/hexo-experiences/PL01.jpg"</span> class=<span class="string">"full-image"</span> width=<span class="string">"180"</span> height=<span class="string">"180"</span> title=<span class="string">"hello"</span>&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>值得注意的几点：</p>
+<pre><code>- 路径名必须以 / 开始，否则会解析出错
+- 路径是相对于 conifg 内的 root 的，这一点挺坑，可以在 source/ 下新建一个 uploads 文件夹用于专门放置这些图片资源
+- {\% img hi /uploads/images/test.jpg 100 100 hello hello %}
+- 图片宽高只能使用数值，不能包含字符串，也不能是百分数
+- 最后一个字段可以为图片添加标题
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/10/03/python-plot/" itemprop="url">
+                  Python 画图
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-03T22:00:31+08:00" content="2016-10-03">
+              2016-10-03
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/10/03/python-plot/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/03/python-plot/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/10/03/python-plot/" class="leancloud_visitors" data-flag-title="Python 画图">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="matplotlib绘图可视化知识点整理"><a href="#matplotlib绘图可视化知识点整理" class="headerlink" title="matplotlib绘图可视化知识点整理"></a><a href="http://python.jobbole.com/85106/" target="_blank" rel="external">matplotlib绘图可视化知识点整理</a></h1>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/14/python/Python-learning/" itemprop="url">
+                  Python 特性学习
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-14T22:00:31+08:00" content="2016-09-14">
+              2016-09-14
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/14/python/Python-learning/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/14/python/Python-learning/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/09/14/python/Python-learning/" class="leancloud_visitors" data-flag-title="Python 特性学习">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="map"><a href="#map" class="headerlink" title="map()"></a>map()</h3><p>case 1:</p>
+<pre><code>&gt;&gt;&gt; def add100(x):
+...     return x+100
+... 
+&gt;&gt;&gt; hh = [11,22,33]
+&gt;&gt;&gt; map(add100,hh)
+[111, 122, 133]
+</code></pre>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/09/14/python/Python-learning/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/09/14/python/python-code-style/" itemprop="url">
+                  Python 编程规范
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-14T22:00:31+08:00" content="2016-09-14">
+              2016-09-14
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/14/python/python-code-style/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/14/python/python-code-style/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/09/14/python/python-code-style/" class="leancloud_visitors" data-flag-title="Python 编程规范">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="about-docstring"><a href="#about-docstring" class="headerlink" title="about docstring"></a>about docstring</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">fetch_bigtable_rows</span><span class="params">(big_table, keys, other_silly_variable=None)</span>:</span></div><div class="line">    <span class="string">"""Fetches rows from a Bigtable.</span></div><div class="line"></div><div class="line">    Retrieves rows pertaining to the given keys from the Table instance</div><div class="line">    represented by big_table.  Silly things may happen if</div><div class="line">    other_silly_variable is not None.</div><div class="line"></div><div class="line">    Args:</div><div class="line">        big_table: An open Bigtable Table instance.</div><div class="line">        keys: A sequence of strings representing the key of each table row</div><div class="line">            to fetch.</div><div class="line">        other_silly_variable: Another optional variable, that has a much</div><div class="line">            longer name than the other args, and which does nothing.</div><div class="line"></div><div class="line">    Returns:</div><div class="line">        A dict mapping keys to the corresponding table row data</div><div class="line">        fetched. Each row is represented as a tuple of strings. For</div><div class="line">        example:</div><div class="line"></div><div class="line">        &#123;'Serak': ('Rigel VII', 'Preparer'),</div><div class="line">         'Zim': ('Irk', 'Invader'),</div><div class="line">         'Lrrr': ('Omicron Persei 8', 'Emperor')&#125;</div><div class="line"></div><div class="line">        If a key from the keys argument is missing from the dictionary,</div><div class="line">        then that row was not found in the table.</div><div class="line"></div><div class="line">    Raises:</div><div class="line">        IOError: An error occurred accessing the bigtable.Table object.</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SampleClass</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="string">"""Summary of class here.</span></div><div class="line"></div><div class="line">    Longer class information....</div><div class="line">    Longer class information....</div><div class="line"></div><div class="line">    Attributes:</div><div class="line">        likes_spam: A boolean indicating if we like SPAM or not.</div><div class="line">        eggs: An integer count of the eggs we have laid.</div><div class="line">    """</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, likes_spam=False)</span>:</span></div><div class="line">        <span class="string">"""Inits SampleClass with blah."""</span></div><div class="line">        self.likes_spam = likes_spam</div><div class="line">        self.eggs = <span class="number">0</span></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">public_method</span><span class="params">(self)</span>:</span></div><div class="line">        <span class="string">"""Performs operation blah."""</span></div></pre></td></tr></table></figure>
+<ul>
+<li>同一行的注释至少应该离开代码两个空格。</li>
+</ul>
+<h3 id="如果一个类不继承自其它类-就显式的从object继承-嵌套类也一样"><a href="#如果一个类不继承自其它类-就显式的从object继承-嵌套类也一样" class="headerlink" title="如果一个类不继承自其它类, 就显式的从object继承. 嵌套类也一样."></a>如果一个类不继承自其它类, 就显式的从object继承. 嵌套类也一样.</h3><pre><code>class SampleClass(object):
+    pass
+
+
+class OuterClass(object):
+
+    class InnerClass(object):
+        pass
+
+
+class ChildClass(ParentClass):
+    &quot;&quot;&quot;Explicitly inherits from another class already.&quot;&quot;&quot;
+</code></pre><h3 id="字符串使用的tips"><a href="#字符串使用的tips" class="headerlink" title="字符串使用的tips"></a>字符串使用的tips</h3><blockquote>
+<p>避免在循环中用+和+=操作符来累加字符串. 由于字符串是不可变的, 这样做会创建不必要的临时对象, 并且导致二次方而不是线性的运行时间. 作为替代方案, 你可以将每个子串加入列表, 然后在循环结束后用 .join 连接列表. (也可以将每个子串写入一个 cStringIO.StringIO 缓存中.)<br>     x = a + b<br>     x = ‘%s, %s!’ % (imperative, expletive)<br>     x = ‘{}, {}!’.format(imperative, expletive)<br>     x = ‘name: %s; score: %d’ % (name, n)<br>     x = ‘name: {}; score: {}’.format(name, n)</p>
+</blockquote>
+<pre><code>items = [&apos;table&apos;]
+for last_name, first_name in employee_list:
+    items.append(&apos;%s, %s&apos; % (last_name, first_name))
+items.append(&apos;table&apos;)
+employee_table = &apos;&apos;.join(items)
+</code></pre><h3 id="显式地关闭文件"><a href="#显式地关闭文件" class="headerlink" title="显式地关闭文件"></a>显式地关闭文件</h3><p>对于不支持使用”with”语句的类似文件的对象,使用 contextlib.closing():</p>
+<pre><code>import contextlib
+
+with contextlib.closing(urllib.urlopen(&quot;http://www.python.org/&quot;)) as front_page:
+    for line in front_page:
+        print line
+</code></pre><h3 id="TODO注释"><a href="#TODO注释" class="headerlink" title="TODO注释"></a>TODO注释</h3><pre><code># TODO(kl@gmail.com): Use a &quot;*&quot; here for string repetition.
+# TODO(Zeke) Change this to use relations.
+</code></pre><h3 id="命名约定"><a href="#命名约定" class="headerlink" title="命名约定"></a>命名约定</h3><ol>
+<li>所谓”内部(Internal)”表示仅模块内可用, 或者, 在类内是保护或私有的.</li>
+<li>用单下划线(_)开头表示模块变量或函数是protected的(使用import * from时不会包含).</li>
+<li>用双下划线(__)开头的实例变量或方法表示类内私有.</li>
+<li>将相关的类和顶级函数放在同一个模块里. 不像Java, 没必要限制一个类一个模块.</li>
+<li>对类名使用大写字母开头的单词(如CapWords, 即Pascal风格), 但是模块名应该用小写加下划线的方式(如lower_with_under.py). 尽管已经有很多现存的模块使用类似于CapWords.py这样的命名, 但现在已经不鼓励这样做, 因为如果模块名碰巧和类名一致, 这会让人困扰.</li>
+</ol>
+<h3 id="模块头部"><a href="#模块头部" class="headerlink" title="模块头部"></a>模块头部</h3><pre><code>&quot;&quot;&quot;
+    package.module
+    ~~~~~~~~~~~~~~
+
+    A brief description goes here.
+
+    :copyright: (c) YEAR by AUTHOR.
+    :license: LICENSE_NAME, see LICENSE_FILE for more details.
+&quot;&quot;&quot;
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/29/Ubuntu-14-04-安装cuda7-5-cudnn/" itemprop="url">
+                  Ubuntu 14.04 安装cuda7.5 + cudnn + caffe
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-29T11:10:31+08:00" content="2016-08-29">
+              2016-08-29
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/29/Ubuntu-14-04-安装cuda7-5-cudnn/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/29/Ubuntu-14-04-安装cuda7-5-cudnn/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/08/29/Ubuntu-14-04-安装cuda7-5-cudnn/" class="leancloud_visitors" data-flag-title="Ubuntu 14.04 安装cuda7.5 + cudnn + caffe">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>系统配置：<br>Dell T7600<br>Nvidia K20s x2</p>
+<h1 id="cuda7-5安装之路"><a href="#cuda7-5安装之路" class="headerlink" title="cuda7.5安装之路"></a>cuda7.5安装之路</h1><p>刚开始安装的思路是，先安装nvidia驱动,在安装cuda7.5，再安装cudnn.</p>
+<ol>
+<li>按照这个思路安装完之后，发现输入nvidia-smi之后没有反应，系统陷入死机的状态（不再动弹），也就是一旦输入这个命令，终端就卡死了，必须关掉再开一个才能用。</li>
+<li>后来按照乾荣给的<a href="http://docs.nvidia.com/cuda/cuda-installation-guide-linux/" target="_blank" rel="external">方案</a>,安装完成之后运行nvidia-smi,提示驱动不匹配。</li>
+<li>最后把前面的安装（步骤1,2, 包括nvidia driver的驱动）都卸载掉，按照<a href="http://www.cnblogs.com/denny402/p/5067265.html" target="_blank" rel="external">这篇博客</a>的方法，把cuda终于安装完成了。提示一下：在安装的时候一定要确认要装的cuda-toolkit版本中提供的驱动版本与现有的nvidia-driver版本一致，否则就要将现有的driver卸载掉（参见<a href="http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#handle-uninstallation" target="_blank" rel="external">冲突</a>）。</li>
+</ol>
+<h1 id="查找nvidia驱动"><a href="#查找nvidia驱动" class="headerlink" title="查找nvidia驱动"></a>查找nvidia驱动</h1><p>lspci | grep NVIDIA</p>
+<h1 id="卸载nvidia驱动参考"><a href="#卸载nvidia驱动参考" class="headerlink" title="卸载nvidia驱动参考"></a>卸载nvidia驱动<a href="http://zh.wikihow.com/%E5%8D%B8%E8%BD%BDUbuntu%E8%BD%AF%E4%BB%B6" target="_blank" rel="external">参考</a></h1><ul>
+<li>先把这个安装包放上<br>  sudo dpkg -i cuda-repo-<distro><em><version></version></em><architecture>.deb</architecture></distro></li>
+<li>浏览已经安装的程序<br>  dpkg –list</li>
+<li>卸载程序和配置文件<br>  sudo apt-get –purge remove <programname><br>  sudo apt-get remove –purge nvidia*</programname></li>
+</ul>
+<h1 id="屏蔽某些显卡"><a href="#屏蔽某些显卡" class="headerlink" title="屏蔽某些显卡"></a>屏蔽某些显卡</h1><p>经过观察发现1号显卡是Quadro K600 不能用来做计算,所以将它屏蔽掉。<br>   /etc/bash.bashrc中写入 export CUDA_VISIBLE_DEVICES=0,2<br>之后检查进入目录/home/dell/NVIDIA_CUDA-7.5_Samples/bin/x86_64/linux/release<br>执行./deviceQuery 就可以看到目前有的gpu计算资源了。</p>
+<h1 id="caffe-安装"><a href="#caffe-安装" class="headerlink" title="caffe 安装"></a>caffe 安装</h1><p>出现某些问题“Aborted at 1452691298 (unix time) try “date -d @1452691298” if you are using GNU date *”<br>这个问题可能需要仔细检查后面跟着的trace。</p>
+<ul>
+<li>在make all -j32中出现TIFF4错误的时候，把anaconda的lib库从LD_LIBRARY_PATH中去掉，再做一遍make all，就可以解决了。–或许原因跟下一个一样。</li>
+<li>Trouble compiling pycaffe, “Python.h : No such file or directory…”<br>忘记把makefile中的这两行取消注释掉了。<pre><code>PYTHON_INCLUDE := $(ANACONDA_HOME)/include \
+                #$(ANACONDA_HOME)/include/python2.7 \
+                #$(ANACONDA_HOME)/lib/python2.7/site-packages/numpy/core/include \
+</code></pre></li>
+<li>Importing caffe results in ImportError: “No module named google.protobuf.internal” (import enum_type_wrapper)<br>pip install protobuf #因为apt-get install的是在系统目录下，而anaconda下没有，所以需要python的接口。</li>
+</ul>
+<h1 id="about-theano"><a href="#about-theano" class="headerlink" title="about theano"></a>about theano</h1><p><a href="http://www.myexception.cn/cuda/2017261.html" target="_blank" rel="external">http://www.myexception.cn/cuda/2017261.html</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/08/28/startup/hexo + github 搭建个人博客/" itemprop="url">
                   hexo + github 搭建个人博客
                 </a>
@@ -317,20 +961,12 @@
 
       
         
-          
-            <h1 id="建站参考"><a href="#建站参考" class="headerlink" title="建站参考"></a>建站参考</h1><p><a href="http://sunwhut.com/2015/10/30/buildBlog/" target="_blank" rel="external">http://sunwhut.com/2015/10/30/buildBlog/</a> </p>
-<h1 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h1><p>hexo g == hexo generate<br>hexo d == hexo deploy<br>hexo s == hexo server<br>hexo n == hexo new <em>新建文件</em><br>还能组合使用，如：<br>hexo d -g (在git上deploy)<br>hexo s -g (在本地浏览器观看)</p>
-<h1 id="更换收藏夹图标"><a href="#更换收藏夹图标" class="headerlink" title="更换收藏夹图标"></a>更换收藏夹图标</h1><p>hexo/source/下放置自己的收藏夹图标，但不要命名为favicon.ico<br>收藏夹图标来源：<a href="http://www.easyicon.net/language.en/" target="_blank" rel="external">http://www.easyicon.net/language.en/</a></p>
-<h1 id="tags和category启用"><a href="#tags和category启用" class="headerlink" title="tags和category启用"></a>tags和category启用</h1><p>参见：<a href="http://theme-next.iissnan.com/theme-settings.html#tags-page" target="_blank" rel="external">http://theme-next.iissnan.com/theme-settings.html#tags-page</a></p>
-<h1 id="404-pages"><a href="#404-pages" class="headerlink" title="404 pages"></a>404 pages</h1><p>在source文件夹下建立404.html<br><a href="https://github.com/h5bp/html5-boilerplate/blob/master/src/404.html" target="_blank" rel="external">https://github.com/h5bp/html5-boilerplate/blob/master/src/404.html</a></p>
-<h1 id="多台电脑同时维护博客"><a href="#多台电脑同时维护博客" class="headerlink" title="多台电脑同时维护博客"></a>多台电脑同时维护博客</h1><p><a href="http://www.pycoding.com/2016/03/06/hexo.html#多台电脑同时维护博客" target="_blank" rel="external">http://www.pycoding.com/2016/03/06/hexo.html#多台电脑同时维护博客</a></p>
-<h1 id="集成第三方服务"><a href="#集成第三方服务" class="headerlink" title="集成第三方服务"></a>集成第三方服务</h1><p><a href="http://theme-next.iissnan.com/getting-started.html#third-party-services" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html#third-party-services</a></p>
-<h1 id="hexo下新建页面下如何放多个文章？"><a href="#hexo下新建页面下如何放多个文章？" class="headerlink" title="hexo下新建页面下如何放多个文章？"></a>hexo下新建页面下如何放多个文章？</h1><p><a href="http://www.zhihu.com/question/33324071" target="_blank" rel="external">http://www.zhihu.com/question/33324071</a><br><a href="http://ijiaober.github.io/2014/08/05/hexo/hexo-04/" target="_blank" rel="external">http://ijiaober.github.io/2014/08/05/hexo/hexo-04/</a></p>
-<h1 id="待完成"><a href="#待完成" class="headerlink" title="待完成"></a>待完成</h1><ul>
-<li>链接本博客内的内容。<br>网站可以被百度检索到<br>访问量统计<br>访问地点的plot。<br>在首页显示全文按钮。<br>按时间和月份排布。</li>
-</ul>
-
-          
+          <h1 id="建站参考-amp-各种配置"><a href="#建站参考-amp-各种配置" class="headerlink" title="建站参考 &amp; 各种配置"></a>建站参考 &amp; 各种配置</h1><p><a href="http://sunwhut.com/2015/10/30/buildBlog/">http://sunwhut.com/2015/10/30/buildBlog/</a><br><a href="http://theme-next.iissnan.com/theme-settings.html">http://theme-next.iissnan.com/theme-settings.html</a><br><a href="http://yangfch3.com/2016/05/08/hexo-experiences/">使用 Hexo 与 NexT 搭建博客的避坑总结</a><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/08/28/startup/hexo + github 搭建个人博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -516,24 +1152,17 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -693,6 +1322,26 @@
   
 
   
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+      var all = MathJax.Hub.getAllJax(), i;
+      for (i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  </script>
+  <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 
   
 

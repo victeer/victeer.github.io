@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="思考,命运" />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -84,16 +84,34 @@
 
 
 
-<meta name="description" content="暂无简介邮箱: lww.victor@gmail.com">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+<meta name="description" content="map()case 1:
+&amp;gt;&amp;gt;&amp;gt; def add100(x):
+...     return x+100
+... 
+&amp;gt;&amp;gt;&amp;gt; hh = [11,22,33]
+&amp;gt;&amp;gt;&amp;gt; map(add100,hh)
+[111, 122, 133]">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python 特性学习">
+<meta property="og:url" content="http://yoursite.com/2016/09/14/python/Python-learning/index.html">
 <meta property="og:site_name" content="六籽木心的博客">
-<meta property="og:description" content="暂无简介邮箱: lww.victor@gmail.com">
-<meta property="og:updated_time" content="2016-08-28T14:23:26.274Z">
+<meta property="og:description" content="map()case 1:
+&amp;gt;&amp;gt;&amp;gt; def add100(x):
+...     return x+100
+... 
+&amp;gt;&amp;gt;&amp;gt; hh = [11,22,33]
+&amp;gt;&amp;gt;&amp;gt; map(add100,hh)
+[111, 122, 133]">
+<meta property="og:updated_time" content="2016-10-09T14:23:53.375Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="暂无简介邮箱: lww.victor@gmail.com">
+<meta name="twitter:title" content="Python 特性学习">
+<meta name="twitter:description" content="map()case 1:
+&amp;gt;&amp;gt;&amp;gt; def add100(x):
+...     return x+100
+... 
+&amp;gt;&amp;gt;&amp;gt; hh = [11,22,33]
+&amp;gt;&amp;gt;&amp;gt; map(add100,hh)
+[111, 122, 133]">
 
 
 
@@ -114,15 +132,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/about/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/09/14/python/Python-learning/"/>
 
-  <title>
-  
-
-  
-    about | 六籽木心的博客
-  
-</title>
+  <title> Python 特性学习 | 六籽木心的博客 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -143,7 +155,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -243,10 +255,212 @@
 
   <div id="posts" class="posts-expand">
     
-    
-      <p>暂无简介<br>邮箱: lww.victor@gmail.com</p>
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Python 特性学习
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-14T22:00:31+08:00" content="2016-09-14">
+              2016-09-14
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/14/python/Python-learning/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/14/python/Python-learning/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/09/14/python/Python-learning/" class="leancloud_visitors" data-flag-title="Python 特性学习">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="map"><a href="#map" class="headerlink" title="map()"></a>map()</h3><p>case 1:</p>
+<pre><code>&gt;&gt;&gt; def add100(x):
+...     return x+100
+... 
+&gt;&gt;&gt; hh = [11,22,33]
+&gt;&gt;&gt; map(add100,hh)
+[111, 122, 133]
+</code></pre><a id="more"></a>
+<p>case 2:</p>
+<pre><code>&gt;&gt;&gt; def abc(a, b, c):
+...     return a*10000 + b*100 + c
+... 
+&gt;&gt;&gt; list1 = [11,22,33]
+&gt;&gt;&gt; list2 = [44,55,66]
+&gt;&gt;&gt; list3 = [77,88,99]
+&gt;&gt;&gt; map(abc,list1,list2,list3)
+[114477, 225588, 336699]
+</code></pre><h3 id="lambda"><a href="#lambda" class="headerlink" title="lambda"></a>lambda</h3><pre><code>info = [lambda a: a**3, lambda b: b**3]
+print(info[0](3),info[1](2)) 
+
+g = lambda x: x*2
+print(g(1))
+</code></pre><h3 id="python-类中定义方法"><a href="#python-类中定义方法" class="headerlink" title="python 类中定义方法"></a>python 类中定义方法</h3><p>Python类里会出现这三个单词，self和cls都可以用别的单词代替，类的方法有三种，</p>
+<p>一是通过def定义的 普通的一般的，需要至少传递一个参数，一般用self，这样的方法必须通过一个类的实例去访问，类似于c++中通过对象去访问；</p>
+<p>二是在def前面加上@classmethod，这种类方法的一个特点就是可以通过类名去调用，但是也必须传递一个参数，一般用cls表示class，表示可以通过类直接调用；</p>
+<p>三是在def前面加上@staticmethod，这种类方法是静态的类方法，类似于c++的静态函数，他的一个特点是参数可以为空，同样支持类名和对象两种调用方式；</p>
+<pre><code>class A:  
+    member = &quot;this is a test.&quot;  
+    def __init__(self):  
+        pass  
+
+    @classmethod  
+    def Print1(cls):  
+        print &quot;print 1: &quot;, cls.member  
+
+    def Print2(self):  
+        print &quot;print 2: &quot;, self.member  
+
+
+    @classmethod      
+    def Print3(paraTest):  
+        print &quot;print 3: &quot;, paraTest.member  
+    @staticmethod  
+    def print4():  
+        print &quot;hello&quot;  
+
+
+a = A()  
+A.Print1()    
+a.Print1()  
+#A.Print2()  
+a.Print2()  
+A.Print3()  
+a.Print3()   
+A.print4()  
+</code></pre>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag">#Python</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/14/python/python-code-style/" rel="next" title="Python 编程规范">
+                <i class="fa fa-chevron-left"></i> Python 编程规范
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/10/03/python-plot/" rel="prev" title="Python 画图">
+                Python 画图 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/09/14/python/Python-learning/"
+     data-title="Python 特性学习"
+     data-content=""
+     data-url="http://yoursite.com/2016/09/14/python/Python-learning/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
   </div>
 
 
@@ -260,8 +474,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="about/index.html"
-           data-title="about" data-url="http://yoursite.com/about/index.html">
+      <div class="ds-thread" data-thread-key="2016/09/14/python/Python-learning/"
+           data-title="Python 特性学习" data-url="http://yoursite.com/2016/09/14/python/Python-learning/">
       </div>
     
   </div>
@@ -285,8 +499,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/victeer.ico"
@@ -329,6 +552,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#map"><span class="nav-number">1.</span> <span class="nav-text">map()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lambda"><span class="nav-number">2.</span> <span class="nav-text">lambda</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#python-类中定义方法"><span class="nav-number">3.</span> <span class="nav-text">python 类中定义方法</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -425,6 +659,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
