@@ -384,8 +384,8 @@
             
               
                 
-                <a class="post-title-link" href="/2016/10/03/python-plot/" itemprop="url">
-                  Python 画图
+                <a class="post-title-link" href="/2016/09/14/python/python-code-style/" itemprop="url">
+                  Python 编程规范
                 </a>
               
             
@@ -398,8 +398,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-03T22:00:31+08:00" content="2016-10-03">
-              2016-10-03
+            <time itemprop="dateCreated" datetime="2016-09-14T22:00:31+08:00" content="2016-09-14">
+              2016-09-14
             </time>
           </span>
 
@@ -409,8 +409,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/10/03/python-plot/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/03/python-plot/" itemprop="commentsCount"></span>
+                <a href="/2016/09/14/python/python-code-style/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/14/python/python-code-style/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -420,7 +420,7 @@
 
           
           
-             <span id="/2016/10/03/python-plot/" class="leancloud_visitors" data-flag-title="Python 画图">
+             <span id="/2016/09/14/python/python-code-style/" class="leancloud_visitors" data-flag-title="Python 编程规范">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -444,7 +444,55 @@
       
         
           
-            <h1 id="matplotlib绘图可视化知识点整理"><a href="#matplotlib绘图可视化知识点整理" class="headerlink" title="matplotlib绘图可视化知识点整理"></a><a href="http://python.jobbole.com/85106/" target="_blank" rel="external">matplotlib绘图可视化知识点整理</a></h1>
+            <h3 id="about-docstring"><a href="#about-docstring" class="headerlink" title="about docstring"></a>about docstring</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">fetch_bigtable_rows</span><span class="params">(big_table, keys, other_silly_variable=None)</span>:</span></div><div class="line">    <span class="string">"""Fetches rows from a Bigtable.</span></div><div class="line"></div><div class="line">    Retrieves rows pertaining to the given keys from the Table instance</div><div class="line">    represented by big_table.  Silly things may happen if</div><div class="line">    other_silly_variable is not None.</div><div class="line"></div><div class="line">    Args:</div><div class="line">        big_table: An open Bigtable Table instance.</div><div class="line">        keys: A sequence of strings representing the key of each table row</div><div class="line">            to fetch.</div><div class="line">        other_silly_variable: Another optional variable, that has a much</div><div class="line">            longer name than the other args, and which does nothing.</div><div class="line"></div><div class="line">    Returns:</div><div class="line">        A dict mapping keys to the corresponding table row data</div><div class="line">        fetched. Each row is represented as a tuple of strings. For</div><div class="line">        example:</div><div class="line"></div><div class="line">        &#123;'Serak': ('Rigel VII', 'Preparer'),</div><div class="line">         'Zim': ('Irk', 'Invader'),</div><div class="line">         'Lrrr': ('Omicron Persei 8', 'Emperor')&#125;</div><div class="line"></div><div class="line">        If a key from the keys argument is missing from the dictionary,</div><div class="line">        then that row was not found in the table.</div><div class="line"></div><div class="line">    Raises:</div><div class="line">        IOError: An error occurred accessing the bigtable.Table object.</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SampleClass</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="string">"""Summary of class here.</span></div><div class="line"></div><div class="line">    Longer class information....</div><div class="line">    Longer class information....</div><div class="line"></div><div class="line">    Attributes:</div><div class="line">        likes_spam: A boolean indicating if we like SPAM or not.</div><div class="line">        eggs: An integer count of the eggs we have laid.</div><div class="line">    """</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, likes_spam=False)</span>:</span></div><div class="line">        <span class="string">"""Inits SampleClass with blah."""</span></div><div class="line">        self.likes_spam = likes_spam</div><div class="line">        self.eggs = <span class="number">0</span></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">public_method</span><span class="params">(self)</span>:</span></div><div class="line">        <span class="string">"""Performs operation blah."""</span></div></pre></td></tr></table></figure>
+<ul>
+<li>同一行的注释至少应该离开代码两个空格。</li>
+</ul>
+<h3 id="如果一个类不继承自其它类-就显式的从object继承-嵌套类也一样"><a href="#如果一个类不继承自其它类-就显式的从object继承-嵌套类也一样" class="headerlink" title="如果一个类不继承自其它类, 就显式的从object继承. 嵌套类也一样."></a>如果一个类不继承自其它类, 就显式的从object继承. 嵌套类也一样.</h3><pre><code>class SampleClass(object):
+    pass
+
+
+class OuterClass(object):
+
+    class InnerClass(object):
+        pass
+
+
+class ChildClass(ParentClass):
+    &quot;&quot;&quot;Explicitly inherits from another class already.&quot;&quot;&quot;
+</code></pre><h3 id="字符串使用的tips"><a href="#字符串使用的tips" class="headerlink" title="字符串使用的tips"></a>字符串使用的tips</h3><blockquote>
+<p>避免在循环中用+和+=操作符来累加字符串. 由于字符串是不可变的, 这样做会创建不必要的临时对象, 并且导致二次方而不是线性的运行时间. 作为替代方案, 你可以将每个子串加入列表, 然后在循环结束后用 .join 连接列表. (也可以将每个子串写入一个 cStringIO.StringIO 缓存中.)<br>     x = a + b<br>     x = ‘%s, %s!’ % (imperative, expletive)<br>     x = ‘{}, {}!’.format(imperative, expletive)<br>     x = ‘name: %s; score: %d’ % (name, n)<br>     x = ‘name: {}; score: {}’.format(name, n)</p>
+</blockquote>
+<pre><code>items = [&apos;table&apos;]
+for last_name, first_name in employee_list:
+    items.append(&apos;%s, %s&apos; % (last_name, first_name))
+items.append(&apos;table&apos;)
+employee_table = &apos;&apos;.join(items)
+</code></pre><h3 id="显式地关闭文件"><a href="#显式地关闭文件" class="headerlink" title="显式地关闭文件"></a>显式地关闭文件</h3><p>对于不支持使用”with”语句的类似文件的对象,使用 contextlib.closing():</p>
+<pre><code>import contextlib
+
+with contextlib.closing(urllib.urlopen(&quot;http://www.python.org/&quot;)) as front_page:
+    for line in front_page:
+        print line
+</code></pre><h3 id="TODO注释"><a href="#TODO注释" class="headerlink" title="TODO注释"></a>TODO注释</h3><pre><code># TODO(kl@gmail.com): Use a &quot;*&quot; here for string repetition.
+# TODO(Zeke) Change this to use relations.
+</code></pre><h3 id="命名约定"><a href="#命名约定" class="headerlink" title="命名约定"></a>命名约定</h3><ol>
+<li>所谓”内部(Internal)”表示仅模块内可用, 或者, 在类内是保护或私有的.</li>
+<li>用单下划线(_)开头表示模块变量或函数是protected的(使用import * from时不会包含).</li>
+<li>用双下划线(__)开头的实例变量或方法表示类内私有.</li>
+<li>将相关的类和顶级函数放在同一个模块里. 不像Java, 没必要限制一个类一个模块.</li>
+<li>对类名使用大写字母开头的单词(如CapWords, 即Pascal风格), 但是模块名应该用小写加下划线的方式(如lower_with_under.py). 尽管已经有很多现存的模块使用类似于CapWords.py这样的命名, 但现在已经不鼓励这样做, 因为如果模块名碰巧和类名一致, 这会让人困扰.</li>
+</ol>
+<h3 id="模块头部"><a href="#模块头部" class="headerlink" title="模块头部"></a>模块头部</h3><pre><code>&quot;&quot;&quot;
+    package.module
+    ~~~~~~~~~~~~~~
+
+    A brief description goes here.
+
+    :copyright: (c) YEAR by AUTHOR.
+    :license: LICENSE_NAME, see LICENSE_FILE for more details.
+&quot;&quot;&quot;
+</code></pre>
           
         
       
@@ -565,163 +613,6 @@
               阅读全文 &raquo;
             </a>
           </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/09/14/python/python-code-style/" itemprop="url">
-                  Python 编程规范
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-14T22:00:31+08:00" content="2016-09-14">
-              2016-09-14
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/09/14/python/python-code-style/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/14/python/python-code-style/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/09/14/python/python-code-style/" class="leancloud_visitors" data-flag-title="Python 编程规范">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="about-docstring"><a href="#about-docstring" class="headerlink" title="about docstring"></a>about docstring</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">fetch_bigtable_rows</span><span class="params">(big_table, keys, other_silly_variable=None)</span>:</span></div><div class="line">    <span class="string">"""Fetches rows from a Bigtable.</span></div><div class="line"></div><div class="line">    Retrieves rows pertaining to the given keys from the Table instance</div><div class="line">    represented by big_table.  Silly things may happen if</div><div class="line">    other_silly_variable is not None.</div><div class="line"></div><div class="line">    Args:</div><div class="line">        big_table: An open Bigtable Table instance.</div><div class="line">        keys: A sequence of strings representing the key of each table row</div><div class="line">            to fetch.</div><div class="line">        other_silly_variable: Another optional variable, that has a much</div><div class="line">            longer name than the other args, and which does nothing.</div><div class="line"></div><div class="line">    Returns:</div><div class="line">        A dict mapping keys to the corresponding table row data</div><div class="line">        fetched. Each row is represented as a tuple of strings. For</div><div class="line">        example:</div><div class="line"></div><div class="line">        &#123;'Serak': ('Rigel VII', 'Preparer'),</div><div class="line">         'Zim': ('Irk', 'Invader'),</div><div class="line">         'Lrrr': ('Omicron Persei 8', 'Emperor')&#125;</div><div class="line"></div><div class="line">        If a key from the keys argument is missing from the dictionary,</div><div class="line">        then that row was not found in the table.</div><div class="line"></div><div class="line">    Raises:</div><div class="line">        IOError: An error occurred accessing the bigtable.Table object.</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">SampleClass</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="string">"""Summary of class here.</span></div><div class="line"></div><div class="line">    Longer class information....</div><div class="line">    Longer class information....</div><div class="line"></div><div class="line">    Attributes:</div><div class="line">        likes_spam: A boolean indicating if we like SPAM or not.</div><div class="line">        eggs: An integer count of the eggs we have laid.</div><div class="line">    """</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, likes_spam=False)</span>:</span></div><div class="line">        <span class="string">"""Inits SampleClass with blah."""</span></div><div class="line">        self.likes_spam = likes_spam</div><div class="line">        self.eggs = <span class="number">0</span></div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">public_method</span><span class="params">(self)</span>:</span></div><div class="line">        <span class="string">"""Performs operation blah."""</span></div></pre></td></tr></table></figure>
-<ul>
-<li>同一行的注释至少应该离开代码两个空格。</li>
-</ul>
-<h3 id="如果一个类不继承自其它类-就显式的从object继承-嵌套类也一样"><a href="#如果一个类不继承自其它类-就显式的从object继承-嵌套类也一样" class="headerlink" title="如果一个类不继承自其它类, 就显式的从object继承. 嵌套类也一样."></a>如果一个类不继承自其它类, 就显式的从object继承. 嵌套类也一样.</h3><pre><code>class SampleClass(object):
-    pass
-
-
-class OuterClass(object):
-
-    class InnerClass(object):
-        pass
-
-
-class ChildClass(ParentClass):
-    &quot;&quot;&quot;Explicitly inherits from another class already.&quot;&quot;&quot;
-</code></pre><h3 id="字符串使用的tips"><a href="#字符串使用的tips" class="headerlink" title="字符串使用的tips"></a>字符串使用的tips</h3><blockquote>
-<p>避免在循环中用+和+=操作符来累加字符串. 由于字符串是不可变的, 这样做会创建不必要的临时对象, 并且导致二次方而不是线性的运行时间. 作为替代方案, 你可以将每个子串加入列表, 然后在循环结束后用 .join 连接列表. (也可以将每个子串写入一个 cStringIO.StringIO 缓存中.)<br>     x = a + b<br>     x = ‘%s, %s!’ % (imperative, expletive)<br>     x = ‘{}, {}!’.format(imperative, expletive)<br>     x = ‘name: %s; score: %d’ % (name, n)<br>     x = ‘name: {}; score: {}’.format(name, n)</p>
-</blockquote>
-<pre><code>items = [&apos;table&apos;]
-for last_name, first_name in employee_list:
-    items.append(&apos;%s, %s&apos; % (last_name, first_name))
-items.append(&apos;table&apos;)
-employee_table = &apos;&apos;.join(items)
-</code></pre><h3 id="显式地关闭文件"><a href="#显式地关闭文件" class="headerlink" title="显式地关闭文件"></a>显式地关闭文件</h3><p>对于不支持使用”with”语句的类似文件的对象,使用 contextlib.closing():</p>
-<pre><code>import contextlib
-
-with contextlib.closing(urllib.urlopen(&quot;http://www.python.org/&quot;)) as front_page:
-    for line in front_page:
-        print line
-</code></pre><h3 id="TODO注释"><a href="#TODO注释" class="headerlink" title="TODO注释"></a>TODO注释</h3><pre><code># TODO(kl@gmail.com): Use a &quot;*&quot; here for string repetition.
-# TODO(Zeke) Change this to use relations.
-</code></pre><h3 id="命名约定"><a href="#命名约定" class="headerlink" title="命名约定"></a>命名约定</h3><ol>
-<li>所谓”内部(Internal)”表示仅模块内可用, 或者, 在类内是保护或私有的.</li>
-<li>用单下划线(_)开头表示模块变量或函数是protected的(使用import * from时不会包含).</li>
-<li>用双下划线(__)开头的实例变量或方法表示类内私有.</li>
-<li>将相关的类和顶级函数放在同一个模块里. 不像Java, 没必要限制一个类一个模块.</li>
-<li>对类名使用大写字母开头的单词(如CapWords, 即Pascal风格), 但是模块名应该用小写加下划线的方式(如lower_with_under.py). 尽管已经有很多现存的模块使用类似于CapWords.py这样的命名, 但现在已经不鼓励这样做, 因为如果模块名碰巧和类名一致, 这会让人困扰.</li>
-</ol>
-<h3 id="模块头部"><a href="#模块头部" class="headerlink" title="模块头部"></a>模块头部</h3><pre><code>&quot;&quot;&quot;
-    package.module
-    ~~~~~~~~~~~~~~
-
-    A brief description goes here.
-
-    :copyright: (c) YEAR by AUTHOR.
-    :license: LICENSE_NAME, see LICENSE_FILE for more details.
-&quot;&quot;&quot;
-</code></pre>
-          
         
       
     </div>
@@ -1152,7 +1043,7 @@ with contextlib.closing(urllib.urlopen(&quot;http://www.python.org/&quot;)) as f
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
